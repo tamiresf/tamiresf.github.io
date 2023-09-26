@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    scroll-margin-top: 20rem;
+}
+
+header .header__left {
+    max-width: 62rem;
+    flex: 1;
+}
+
+header .header__left p {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    max-width: 50rem;
+}
+
+header .header__right .header__image {
+    position: relative;
+    line-height: 0;
+}
+header .header__right .header__image .tamires{
+   border-radius: 0.5rem;
+   min-width: 25rem;
+   max-width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    header .header__left p {
+        margin: 2rem auto 4rem;
+    }
+}
